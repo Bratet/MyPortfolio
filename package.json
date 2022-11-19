@@ -1,5 +1,5 @@
 { 
-  "homepage": "http://Bratet.github.io/MyPortfolio",
+  "homepage": "https://bratet.github.io/MyPortfolio/",
   "name": "napholio",
   "author": "Bratet",
   "private": true,
@@ -10,9 +10,7 @@
     "dev": "vite --host --port 3000",
     "build:dev": "vite build -m dev",
     "preview": "yarn tsc & yarn build:dev && vite preview --host --port=4000",
-    "format": "prettier --write --ignore-path .gitignore \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\"",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "format": "prettier --write --ignore-path .gitignore \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\""
   },
   "dependencies": {
     "@chakra-ui/react": "^2.4.0",
