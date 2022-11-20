@@ -12,6 +12,9 @@ import {
 import { BrandTwitter, BrandYoutube, BrandInstagram } from "tabler-icons-react";
 import BoxWrapper from "./BoxWrapper";
 import { ContactIconsList } from "./ContactIcons";
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -89,6 +92,22 @@ const social = [BrandTwitter, BrandYoutube, BrandInstagram];
 export function Contact() {
   const { classes } = useStyles();
 
+  const form: any = useRef();
+
+  const sendEmail = (e : any) => {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'template_xv5m6e7', form.current, 'jkEwOHiY1oD0XODTO')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      
+      e.target.reset();
+    };
+  
+
   // const icons = social.map((Icon, index) => (
   //   <ActionIcon
   //     key={index}
@@ -117,22 +136,25 @@ export function Contact() {
 
           {/* <Group mt="xl">{icons}</Group> */}
         </div>
-        <form className={classes.form} name="contact" method="post">
+        <form ref={form} className={classes.form} onSubmit={sendEmail} method="post">
           <TextInput
             label="Email"
+            name="user_email"
             placeholder="your@email.com"
             required
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
           <TextInput
             label="Name"
+            name="user_name"
             placeholder="Your name"
             mt="md"
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
           <Textarea
+            label="Message"
             required
-            label="Your message"
+            name="message"
             placeholder="I like your hoodie"
             minRows={4}
             mt="md"
@@ -140,7 +162,7 @@ export function Contact() {
           />
 
           <Group position="right" mt="md">
-            <Button className={classes.control}>Send message</Button>
+            <Button className={classes.control} type="submit" value="Send">Send message</Button>
           </Group>
         </form>
       </SimpleGrid>

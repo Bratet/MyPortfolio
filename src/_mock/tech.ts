@@ -18,6 +18,8 @@ import scikitPng from "../assets/languages/scikitlearn.jpg";
 import tensorflowPng from "../assets/languages/tensorflow.png";
 import flaskPng from "../assets/languages/flask.png";
 import mongodbPng from "../assets/languages/mongodb.jpg";
+import mysqlPng from "../assets/languages/mysql.png";
+
 
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -31,6 +33,7 @@ export const tech = [
         type: "Programming languages",
         png: [
           pythonPng,
+          rPng,
           cPng,
           cplusPng,
           javaPng,
@@ -51,12 +54,12 @@ export const tech = [
       {
         type: "Tools & services",
         png: [
+          mysqlPng,
           postgresqlPng,
           sqlitePng,
           mongodbPng,
           gitPng,
           githubPng,
-          netlifyPng,
           dockerPng,
         ],
       },

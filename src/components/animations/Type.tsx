@@ -14,8 +14,11 @@ function Type() {
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 40,
-      }}
+        deleteSpeed: 20,
+        delay: 30,
+        
+      }
+      }
     />
   );
 }

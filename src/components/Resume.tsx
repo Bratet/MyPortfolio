@@ -53,7 +53,7 @@ export default function Work() {
     return (
       <Box mt={100}>
         <Center>
-          <Box backgroundColor={`mode.${colorMode}.background`} sx={{ border: 'solid black 1px', borderRadius: 15, marginBottom: 10, backgroundColor: "#12B886"}} >
+          <Box backgroundColor={`mode.${colorMode}.background`} sx={{ border: 'solid black 1px', borderRadius: 15, marginBottom: 10, backgroundColor: "#0CA678"}} >
             <Heading p={40}>
               Work Exprience 
             </Heading>
@@ -67,7 +67,7 @@ export default function Work() {
             contentStyle={{ background: 'transparent'}}
             contentArrowStyle={{ borderRight: '7px solid' }}
             date="28 june 2022 - 28 august 2022 (2 months)"
-            iconStyle={{ background: '#20C997'}}
+            iconStyle={{ background: '#0CA678'}}
             icon={<Icon icon={devIcon} />}
             intersectionObserverProps={{ rootMargin: '-20px 0px -20px 0px' }}
           >
@@ -75,7 +75,7 @@ export default function Work() {
               <Heading as="h3" size="lg" fontSize={30}>
                 Backend Developer Internships
               </Heading>
-              <Heading as="h4" size="md" color="#20C997" pt={2}>
+              <Heading as="h4" size="md" color="#0CA678" pt={2}>
                 at PULL4YOU SERVICE S.A.R.L
               </Heading>
               <p>Development of a transport service optimized on demand : a web application that allows the user to find the shortest path that visits all the given points</p>
@@ -93,7 +93,7 @@ export default function Work() {
             </Heading>
           </Box>
         <Center>
-          <Box backgroundColor={`mode.${colorMode}.background`} sx={{ border: 'solid black 1px', borderRadius: 15, marginBottom: 10, backgroundColor: "#12B886"}} >
+          <Box backgroundColor={`mode.${colorMode}.background`} sx={{ border: 'solid black 1px', borderRadius: 15, marginBottom: 10, backgroundColor: "#0CA678"}} >
             <Heading p={40}>
               Education Path
             </Heading>
@@ -105,7 +105,7 @@ export default function Work() {
             contentStyle={{ background: 'transparent'}}
             contentArrowStyle={{ borderRight: '7px solid' }}
             date="September 2021 - Present"
-            iconStyle={{ background: '#20C997'}}
+            iconStyle={{ background: '#0CA678'}}
             icon={<Icon icon={educationIcon} />}
             position = "right"
             intersectionObserverProps={{ rootMargin: '-20px 0px -20px 0px' }}
@@ -114,7 +114,7 @@ export default function Work() {
               <Heading as="h3" size="lg" fontSize={30}>
                 Artificial Intelligence Engineering
               </Heading>
-              <Heading as="h4" size="md" color="#20C997" pt={2}>
+              <Heading as="h4" size="md" color="#0CA678" pt={2}>
                 at National School of Computer Science and Systems Analysis (ENSIAS in French)
               </Heading>
               <p>
@@ -130,7 +130,7 @@ export default function Work() {
             contentStyle={{ background: 'transparent'}}
             contentArrowStyle={{ borderRight: '7px solid' }}
             date="September 2019 - June 2021"
-            iconStyle={{ background: '#20C997'}}
+            iconStyle={{ background: '#0CA678'}}
             icon={<Icon icon={educationIcon} />}
             position = "left"
             intersectionObserverProps={{ rootMargin: '-20px 0px -20px 0px' }}
@@ -139,7 +139,7 @@ export default function Work() {
               <Heading as="h3" size="lg" fontSize={30}>
                 MP <br/>(Math, Physics)
               </Heading>
-              <Heading as="h4" size="md" color="#20C997" pt={2}>
+              <Heading as="h4" size="md" color="#0CA678" pt={2}>
                 at Preparatory Classes for Engineering Schools in Tangier (CPGET)
               </Heading>
               <p>

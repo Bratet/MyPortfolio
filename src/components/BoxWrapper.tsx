@@ -31,7 +31,7 @@ const BoxWrapper = forwardRef<HTMLDivElement, any>(
               ? theme.colors.white[3]
               : theme.colors.white[6]
           } !important`,
-          maxWidth: 1100,
+          maxWidth: 1000,
         })}
         ref={ref}
         {...props}

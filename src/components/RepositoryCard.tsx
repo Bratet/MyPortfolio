@@ -18,6 +18,7 @@ const RepositoryCard = (props: any) => {
   const { title, description, language, url, stargazers_count, forks_count } =
     props;
 
+
   const handleLinkClick = (e: any, link: any) => {
     window.open(link);
     e.stopPropagation();
@@ -44,9 +45,9 @@ const RepositoryCard = (props: any) => {
           }`,
           boxShadow: `${theme.shadows.md} !important`,
           backgroundColor:
-            theme.colorScheme === "dark"
-              ? theme.colors.dark[7]
-              : theme.colors.white[0],
+            theme.colorScheme === "dark" 
+              ? theme.colors.dark[8]
+              : theme.colors.teal[6],
         })}
       >
         <Group>
