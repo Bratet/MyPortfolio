@@ -31,8 +31,8 @@ const RepositoryCard = (props: any) => {
         sx={(theme) => ({
           padding: theme.spacing.md,
           
-          minHeight: 125,
-          maxheight: 150,
+          minHeight: 150,
+          maxHeight: 150,
           
           width: "100%",
           maxWidth: 300,
@@ -56,7 +56,7 @@ const RepositoryCard = (props: any) => {
             <Group>
               <BrandGithub />
               
-              <Text size="md">{title}</Text>
+              <Text size="md">{title.length < 14 ? title : title.slice(0,14).concat("..")}</Text>
             
             </Group>
             <Group position="apart">
