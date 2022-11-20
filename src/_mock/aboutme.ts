@@ -1,5 +1,11 @@
 // my age
-function getAge() {
+export function getAge() {
+  const birthYear = 2002;
+  const currentYear = new Date().getFullYear();
+  return currentYear - birthYear;
+}
+
+function getage() {
   const birthYear = 2002;
   const currentYear = new Date().getFullYear();
   return currentYear - birthYear;
@@ -11,7 +17,7 @@ export const aboutMe = {
     {
       id: 1,
       text: ` 
-              I'm Mrabet Ahmed, a ${getAge()} years old AI engineer student, from Tangier Morocco 🇲🇦. 
+              I'm Mrabet Ahmed, a ${getage()} years old AI engineer student, from Tangier Morocco 🇲🇦. 
             `,
       icon: "🧔🏻",
     },

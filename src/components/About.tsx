@@ -7,7 +7,7 @@ import vsDark from "prism-react-renderer/themes/dracula";
 import BoxWrapper from "./BoxWrapper";
 // d_mock
 import { useMediaQuery } from "@mantine/hooks";
-import { aboutMe } from "../_mock/aboutme";
+import { aboutMe, getAge } from "../_mock/aboutme";
 import { useState } from "react";
 
 // ----------------------------------------------------------------------------
@@ -80,7 +80,7 @@ const aboutMeCode = `from Earth import Ahmed
 Class Props(self):
   self.first_name = "Ahmed"
   self.last_name = "Mrabet"
-  self.age = 20
+  self.age = ${getAge()}
   self.location: "Rabat, Morocco"
   self.email: "ahmedmrabet.002@gmail.com"
 
