@@ -14,7 +14,6 @@
 
 ## 🏠 [Homepage](https://ahmedmrabet.me/)
 
-## ✨ [Demo](https://ahmedmrabet.me/)
 
 <br>
 
