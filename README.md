@@ -12,9 +12,9 @@
   <img src="src/assets/developer_activity.svg" width="400" height="500" >
 </div>
 
-## 🏠 [Homepage](https://ahmed-mrabet.netlify.app/)
+## 🏠 [Homepage](https://ahmedmrabet.me/)
 
-## ✨ [Demo](https://ahmed-mrabet.netlify.app/)
+## ✨ [Demo](https://ahmedmrabet.me/)
 
 <br>
 
