@@ -10,6 +10,12 @@
     />
     <title>Ahmed Mrabet</title>
   </head>
+    <!-- A little help for the Netlify bots if you're not using a SSG -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="email" name="email" />
+      <input type="text" name="name" />
+      <textarea name="message"></textarea>
+    </form>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
