@@ -89,7 +89,7 @@ interface ContactIconsListProps {
 }
 
 const MOCKDATA = [
-  { title: "Email", description: "ahmedmrabet.002@gmail.com", icon: At },
+  { title: "Email", description: "ahmedmrabet.002@gmail.com", icon: At},
   { title: "Github", description: "Bratet", icon: BrandGithub },
   { title: "Address", description: "Rabat, Morocco", icon: MapPin },
   { title: "Working hours", description: "8 a.m. – 11 p.m.", icon: Sun },

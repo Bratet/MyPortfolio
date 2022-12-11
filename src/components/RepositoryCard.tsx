@@ -36,6 +36,7 @@ const RepositoryCard = (props: any) => {
           
           width: "100%",
           maxWidth: 300,
+          minWidth: 200,
           borderRadius: 20,
           marginTop: theme.spacing.md,
           border: `1px solid ${

@@ -55,7 +55,7 @@ const ParticlesWrapper = ({ sx, ...others }: ParticlesWrapperProps) => {
         speed: 1,
       },
       number: {
-        value: 100,
+        value: 200,
       },
       shape: {
         type: ["circle", "square", "triangle", "polygon"],

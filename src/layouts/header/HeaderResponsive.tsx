@@ -140,7 +140,7 @@ const socialLinks = [
   },
   {
     label: "Linkedin",
-    href: "https://www.linkedin.com/in/ahmed--mrabet/",
+    href: "https://www.linkedin.com/in/ahmedmrabet/",
     icon: <BrandLinkedin size={28} />,
     color: "#0077B5",
   },

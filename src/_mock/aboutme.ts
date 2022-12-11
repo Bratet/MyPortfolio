@@ -17,15 +17,15 @@ export const aboutMe = {
     {
       id: 1,
       text: ` 
-              I'm Mrabet Ahmed, a ${getage()} years old AI engineer student, from Tangier Morocco 🇲🇦. 
+              I'm Mrabet Ahmed, a ${getage()} years old AI engineer student, from Tangier, Morocco 🇲🇦. 
             `,
       icon: "🧔🏻",
     },
     {
       id: 2,
       text: ` 
-              I'm an Artificial Intelligence Engineer student at National School of Computer Science 
-              and Systems Analysis (ENSIAS in french).
+              I'm an Artificial Intelligence Engineer student at the National School of Computer Science 
+              And Systems Analysis (ENSIAS in French).
             `,
       icon: "🧑🏼‍🎓",
     },
@@ -34,7 +34,9 @@ export const aboutMe = {
       text: `
               I enjoy being challenged and engaging with projects that require me to work outside
               my comfort zone and knowledge set, as continuing to learn more and more the world of
-              Ariificial Intelligence.
+              Artificial Intelligence.
+              On the weekends I like to explore new places, try out new
+              recipes, and read books. 
            `,
       icon: "🎯",
     },
@@ -57,7 +59,7 @@ export const aboutMe = {
       id: 6,
       text: `
               whenever possible, i also apply my passion for developing products with multiple 
-              different frameworks and technologies, like Tensorflow, Scikit-learn, Django, Flask ..
+              different frameworks and technologies, like Tensorflow, Scikit-learn, Django, Flask ...
             `,
       icon: "🐋",
     }

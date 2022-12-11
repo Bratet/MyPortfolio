@@ -1,6 +1,6 @@
 import { useState } from "react";
 // Mantine
-import { ActionIcon, createStyles } from "@mantine/core";
+import { ActionIcon, createStyles, Center } from "@mantine/core";
 import { useScrollIntoView } from "@mantine/hooks";
 // components
 import About from "../components/About";
@@ -12,6 +12,7 @@ import Skills from "../components/Skills";
 // // icons
 import { ArrowUp } from "tabler-icons-react";
 import ParticlesWrapper from "../components/animations/ParticlesWrapper";
+import Footer from "../components/Footer";
 
 // -------------------------------------------------
 
@@ -50,8 +51,12 @@ export default function LandingPage() {
     <>
       <div ref={targetRef} />
       <ParticlesWrapper />
+        <Center>
         <Github />
+        </Center>
+        <Center>
         <Project />
+        </Center>
       <div className={classes.sticky}>
         <ActionIcon
           variant="filled"
@@ -65,6 +70,7 @@ export default function LandingPage() {
           <ArrowUp />
         </ActionIcon>
       </div>
+      <Footer />
     </>
   );
 }

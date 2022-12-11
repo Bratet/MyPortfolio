@@ -138,12 +138,12 @@ export default function Hero() {
                     : theme.colors.teal[4],
 
                 [theme.fn.smallerThan("sm")]: {
-                  marginTop: 125,
+                  marginTop: 100,
                   width: 225,
                   height: 225,
                 },
                 [theme.fn.largerThan("sm")]: {
-                  marginTop: 125,
+                  marginTop: 100,
                   minWidth: 400,
                   minHeight: 400,
                 },

@@ -2,14 +2,22 @@
 import ParticlesWrapper from "../components/animations/ParticlesWrapper";
 import Page from "../components/Page";
 import Skills from "../components/Skills";
+import Footer from "../components/Footer";
+import { Center } from "@mantine/core"
 
 // -------------------------------------------------
 
 export default function SkillsPage() {
   return (
-    <Page title="Skills" isFirst={true} withBackground={false}>
+    <>
+    
       <ParticlesWrapper />
+      <Center>
       <Skills />
-    </Page>
+      </Center>
+    <Center>
+    <Footer />
+    </Center>
+    </>
   );
 }

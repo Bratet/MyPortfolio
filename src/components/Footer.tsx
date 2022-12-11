@@ -24,18 +24,17 @@ const socialLinks = [
   },
   {
     label: "Linkedin",
-    href: "https://www.linkedin.com/in/ahmed--mrabet",
+    href: "https://www.linkedin.com/in/ahmedmrabet",
     icon: <BrandLinkedin size={28} />,
   },
 ];
 
 const useStyles = createStyles((theme) => ({
   footer: {
-    backgroundColor:
-      theme.colorScheme === "dark"
-        ? theme.colors.dark[6]
-        : theme.colors.gray[3],
+    transparent: true,
+    position: "relative",
     width: "100%",
+    minWidth: "100%",
     zIndex: 5,
   },
 

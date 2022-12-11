@@ -8,12 +8,15 @@ import {
   Button,
   Group,
   ActionIcon,
+  Container,
+  Popover,
 } from "@mantine/core";
 import { BrandTwitter, BrandYoutube, BrandInstagram } from "tabler-icons-react";
 import BoxWrapper from "./BoxWrapper";
 import { ContactIconsList } from "./ContactIcons";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { TagLabel } from "@chakra-ui/react";
 
 
 const useStyles = createStyles((theme) => ({
@@ -120,6 +123,8 @@ export function Contact() {
   // ));
 
   return (
+
+    <Container size="md">
     <BoxWrapper>
       <SimpleGrid
         cols={2}
@@ -136,7 +141,7 @@ export function Contact() {
 
           {/* <Group mt="xl">{icons}</Group> */}
         </div>
-        <form ref={form} className={classes.form} onSubmit={sendEmail} method="post">
+        <form ref={form} className={classes.form}  method="post">
           <TextInput
             label="Email"
             name="user_email"
@@ -161,11 +166,21 @@ export function Contact() {
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
 
-          <Group position="right" mt="md">
-            <Button className={classes.control} type="submit" value="Send">Send message</Button>
+          <Group position="right" mt="md"> 
+            <Popover width={150} position="bottom" withArrow shadow="md">
+              <Popover.Target>
+            <Button className={classes.control} type="submit" value='send'>
+              Send Message
+            </Button>
+            </Popover.Target>
+            <Popover.Dropdown>
+            <Text size="sm"> Message Sent ✔️ </Text>
+            </Popover.Dropdown>
+    </Popover>
           </Group>
         </form>
       </SimpleGrid>
     </BoxWrapper>
+    </Container>
   );
 }

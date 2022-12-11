@@ -1,5 +1,5 @@
 // Mantine
-import { Button, Container, Group, Text, Title, createStyles} from "@mantine/core";
+import { Button, Container, Group, Text, Title, createStyles, Paper, Center, Image} from "@mantine/core";
 import { Prism } from "@mantine/prism";
 import github from "prism-react-renderer/themes/github";
 import vsDark from "prism-react-renderer/themes/dracula";
@@ -9,6 +9,7 @@ import BoxWrapper from "./BoxWrapper";
 import { useMediaQuery } from "@mantine/hooks";
 import { aboutMe, getAge } from "../_mock/aboutme";
 import { useState } from "react";
+import myImage from "../assets/ahmed mrabet.jpg";
 
 // ----------------------------------------------------------------------------
 
@@ -31,9 +32,10 @@ const useStyles: any = createStyles((theme) => ({
       marginRight: 0,
     },
     [theme.fn.largerThan("md")]: {
-      maxWidth: 800,
+      maxWidth: 500,
       minWidth: 600,
     },
+    width: "100%",
   },
 
   control: {
@@ -101,7 +103,8 @@ export default function About() {
   const [mode, setMode] = useState(false);
 
   return (
-    <Container px="xl" size="lg">
+    <Container px="xl" size={900}>
+      {!match ? (
       <Group position='right'>
       <Button radius="lg" size="md" className={classes.control} onClick={
         () => setMode(false && !match)
@@ -116,12 +119,63 @@ export default function About() {
       }
       disabled={!match && mode === true}
 
+      
+
       >
         Developer Mode
       </Button>
       </Group>
+      ) : (
+        <>
+        </>
+      )}
+        
+
       <BoxWrapper withBackground={false}>
         { mode && !match ? (
+          
+          <>
+          <Center>
+          <Paper shadow="lg"
+              p="md"
+              radius="lg"
+              sx={(theme) => ({
+                backgroundColor:
+                  theme.colorScheme === "dark"
+                    ? theme.colors.teal[2]
+                    : theme.colors.teal[4],
+                [theme.fn.smallerThan("sm")]: {
+                  marginTop: 25,
+                  width: 225,
+                  height: 225,
+                  marginBottom: 50,
+                },
+                [theme.fn.largerThan("sm")]: {
+                  marginTop: 25,
+                  minWidth: 300,
+                  minHeight: 300,
+                  marginBottom: 50,
+                },
+                maxWidth: 400,
+                maxHeight: 400,
+                boxShadow: `0 0 10px ${
+                  theme.colorScheme === "dark"
+                    ? theme.colors.white[3]
+                    : theme.colors.white[4]
+                
+                } !important`,
+              })}>
+            <Image
+              src={myImage}
+              alt="Ahmed Mrabet"
+              radius="lg"
+              width="100%"
+              height={269}
+              
+            />
+          </Paper>
+          </Center>
+
           <Prism
             noCopy
             language="python"
@@ -131,8 +185,47 @@ export default function About() {
           >
             {aboutMeCode}
           </Prism>
+          </>
         ) : (
           <>
+          <Center>
+          <Paper shadow="lg"
+              p="md"
+              radius="lg"
+              sx={(theme) => ({
+                backgroundColor:
+                  theme.colorScheme === "dark"
+                    ? theme.colors.teal[2]
+                    : theme.colors.teal[4],
+                [theme.fn.smallerThan("sm")]: {
+                  marginTop: 25,
+                  marginBottom: 50,
+                },
+                [theme.fn.largerThan("sm")]: {
+                  marginTop: 25,
+                  minWidth: 300,
+                  minHeight: 300,
+                  marginBottom: 50,
+                },
+                maxWidth: 400,
+                maxHeight: 400,
+                boxShadow: `0 0 10px ${
+                  theme.colorScheme === "dark"
+                    ? theme.colors.white[3]
+                    : theme.colors.white[4]
+                
+                } !important`,
+              })}>
+            <Image
+              src={myImage}
+              alt="Ahmed Mrabet"
+              radius="lg"
+              width="100%"
+              height={269}
+              
+            />
+          </Paper>
+          </Center>
             <Title
               order={3}
               sx={(theme) => ({
@@ -152,6 +245,7 @@ export default function About() {
                   <span style={{ marginRight: 5 }}>{item.icon}</span>
                   {item.text}
                 </Text>
+                <h5></h5>
               </div>
             ))}
           </>
