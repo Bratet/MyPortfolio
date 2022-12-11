@@ -10,11 +10,12 @@ import { googleAnlyticId } from "./config";
 
 // -----------------------------------------------------------------------------
 
-ReactGA.initialize(googleAnlyticId);
+
 
 // -----------------------------------------------------------------------------
 
 function App() {
+  ReactGA.initialize(googleAnlyticId);
   return (
     <ThemeProvider>
       <ScrollToTop />
