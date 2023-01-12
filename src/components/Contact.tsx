@@ -16,8 +16,6 @@ import BoxWrapper from "./BoxWrapper";
 import { ContactIconsList } from "./ContactIcons";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { TagLabel } from "@chakra-ui/react";
-
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -141,7 +139,7 @@ export function Contact() {
 
           {/* <Group mt="xl">{icons}</Group> */}
         </div>
-        <form ref={form} className={classes.form}  method="post">
+        <form ref={form} className={classes.form}  method="post" onSubmit={sendEmail}>
           <TextInput
             label="Email"
             name="user_email"

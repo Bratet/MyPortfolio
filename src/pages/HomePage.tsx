@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import Page from "../components/Page";
 import Footer from "../components/Footer";
 import { Center } from "@mantine/core";
-import { Box } from '@chakra-ui/react'
+
 
 // ----------------------------------------
 

@@ -86,10 +86,9 @@ export default function Hero() {
   const [active, setActive] = useState("/about");
   const navigate = useNavigate();
   return (
-    
     <Group pr={10}>
       <Grid justify="space-between" align="center">
-        <Grid.Col lg={6} md={7} sm={12} mt={75}>
+        <Grid.Col lg={7} md={7} sm={12} mt={75}>
           <Center>
             <Box className={classes.box}>
               <Title className={classes.title}>
@@ -125,7 +124,7 @@ export default function Hero() {
             </Box>
           </Center>
         </Grid.Col>
-        <Grid.Col lg={6} md={5} sm={12}>
+        <Grid.Col lg={4} md={5} sm={12}>
           <Center>
             <Paper
               shadow="lg"
