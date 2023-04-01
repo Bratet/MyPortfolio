@@ -11,6 +11,8 @@ import { BrandTwitter, BrandGithub, BrandLinkedin } from "tabler-icons-react";
 
 // --------------------------------------------------
 
+const currentYear = new Date().getFullYear();
+
 const socialLinks = [
   {
     label: "Twitter",
@@ -79,7 +81,7 @@ export default function Footer() {
     <footer className={classes.footer}>
       <Container className={classes.afterFooter}>
         <Text color="dimmed" size="sm">
-          Copyright © 2022 Bratet All rights reserved.
+          Copyright © {currentYear} Bratet All rights reserved.
         </Text>
 
         <Group spacing={0} className={classes.social} position="right" noWrap>

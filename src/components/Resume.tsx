@@ -12,9 +12,9 @@ export default function Work() {
     const { colorMode } = useColorMode();
     // const [durantion, setDurantion] = useState(0);
     // const today = new Date()
-    const mainBackTech = ['Python, ', 'Django, ', 'Django Rest Framework,', 'RESTful API,', 'Pytest,', 'Python  3rd party libraires,', 'Docker,', 'Unit Testing,', 'Scrum,', 'PostegreSQL,', 'POSTMAN,', 'Git,', 'GitHub,', 'Postgis,', 'GoogleMaps API,','Geojson.']
-    const mainMP = ['Maths (analysis & algebre), ', 'Computer Science, ' , 'Python programming language, ', 'Database & SQL, ', 'physique & chemistry.']
-    const mainBach = ['Artificial Intelligence, ', 'Machine Learning Theory, ', 'Data Science, ', 'IOT, ', 'Java OOP programming, ',' Database Administration, ','Relational Databases Management Systems (MySQL), ', 'Networking (OSI network model), ', 'Operating Systems (Linux) & bash scripitng, ', 'UML, ', 'English/French (TEC).']
+    const mainBackTech = ['Python · ', 'Django · ', 'Django Rest Framework ·', 'RESTful API ·', 'Pytest ·', 'Docker ·', 'Scrum ·', 'PostegreSQL ·', 'POSTMAN ·', 'Git ·', 'GitHub ·', 'Postgis ·', 'GoogleMaps API']
+    const mainMP = ['Maths (analysis & algebre) · ', 'Computer Science ·' , 'Python programming language ·', 'Database & SQL · ', 'physique & chemistry']
+    const mainBach = ['Collective intelligence', 'High-performance computing', 'Machine Learning Theory, ', 'Data Science, ', 'IOT, ', 'Java OOP programming, ',' Database Administration, ','Relational Databases Management Systems (MySQL), ', 'Networking (OSI network model), ', 'Operating Systems (Linux) & bash scripitng, ', 'UML, ', 'English/French (TEC).']
     var mainTec = mainBackTech.map((p, i) => {
       return (
         <Badge fontSize="0.8em" ml={1} borderWidth="1px" p={1} m={1}  borderRadius="10" key={i}>
@@ -66,21 +66,43 @@ export default function Work() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'transparent'}}
             contentArrowStyle={{ borderRight: '7px solid' }}
-            date="28 june 2022 - 28 august 2022 (2 months)"
+            date="28 June 2022 - 28 September 2022 (3 months)"
             iconStyle={{ background: '#0CA678'}}
             icon={<Icon icon={devIcon} />}
             intersectionObserverProps={{ rootMargin: '-20px 0px -20px 0px' }}
           >
             <Box p={15} sx={{ background: `mode.${colorMode}.background`}} boxShadow="dark-lg" shadow="md" borderWidth="1px"  borderRadius="16">
               <Heading as="h3" size="lg" fontSize={30}>
-                Backend Developer Internships
+                AI/Backend Developer Internships
               </Heading>
               <Heading as="h4" size="md" color="#0CA678" pt={2}>
                 at PULL4YOU SERVICE S.A.R.L
               </Heading>
-              <p>Development of a transport service optimized on demand : a web application that allows the user to find the shortest path that visits all the given points</p>
               <p>
-                The technologies i've worked with : 
+              ➔ Developed on-demand transportation service, enhancing user experience by
+              generating the route 400% times faster
+              </p>
+              <p>
+              ➔ Constructed web app with Restful APIS for optimized route planning, decreasing
+              travel time and saving fuel of each vehicle.
+              </p>
+              <p>
+              ➔ Analyzed and optimized multi-vehicle path.
+              </p>
+              <p>
+              ➔ Engineered algorithm for efficient vehicle paths.
+              </p>
+              <p>
+              ➔ Incorporated traffic patterns and road conditions into algorithm.
+              </p>
+              <p>
+              ➔ Integrated error detection system, reducing delays.
+              </p>
+              <p>
+              ➔ Implemented optimization system into existing backend.
+              </p>
+              <p>
+                Skills Acquired : 
               <div style={{ textAlign: "left", marginBottom: "4px", padding: "4px" }}>
                 {mainTec}
               </div>

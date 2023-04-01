@@ -79,23 +79,25 @@ const aboutMeCode = `from Earth import Ahmed
 
 // -----------------------------------------------------------------------------
 
-Class Props(self):
-  self.first_name = "Ahmed"
-  self.last_name = "Mrabet"
-  self.age = ${getAge()}
-  self.location: "Rabat, Morocco"
-  self.email: "ahmedmrabet.002@gmail.com"
+Class Human(Ahmed):
+  def __init__(self):
+    self.first_name = "Ahmed"
+    self.last_name = "Mrabet"
+    self.age = ${getAge()}
+    self.location: "Rabat, Morocco"
+    self.email: "ahmedmrabet.002@gmail.com"
 
-  AboutMe():
-  return (
-    { ${aboutMe.details.map(
-      (item: any) =>
-        `
-      ${item.icon} = {${item.text}}`
-    )}
-    }
-  )
-}`;
+  
+  def aboutMe(self):
+    return (
+      { ${aboutMe.details.map(
+        (item: any) =>
+          `
+        ${item.icon} = {${item.text}}`
+      )}
+      }
+    )
+  `;
 
 export default function About() {
   const match = useMediaQuery("(max-width: 900px)");

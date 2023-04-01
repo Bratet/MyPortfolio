@@ -4,14 +4,13 @@ import djangoPng from "../assets/languages/django.png";
 import dockerPng from "../assets/languages/docker.png";
 import gitPng from "../assets/languages/git.png";
 import githubPng from "../assets/languages/github.png";
-import csharpPng from "../assets/languages/C#.png";
-import netlifyPng from "../assets/languages/netlify.png";
+import pytestPng from "../assets/languages/pytest.png";
+import seleniumPng from "../assets/languages/Selenium.png";
 import postgresqlPng from "../assets/languages/postgresql.png";
 import pythonPng from "../assets/languages/python.png";
 import rPng from "../assets/languages/r.png";
-import juliaPng from "../assets/languages/julia.png";
-import sqlitePng from "../assets/languages/sqlite.png";
-import cplusPng from "../assets/languages/c++.png";
+import fastapiPng from "../assets/languages/fastapi.jpg";
+import opencvPng from "../assets/languages/opencv.png";
 import cPng from "../assets/languages/c.png";
 import javaPng from "../assets/languages/java.png";
 import scikitPng from "../assets/languages/scikitlearn.jpg";
@@ -19,8 +18,10 @@ import tensorflowPng from "../assets/languages/tensorflow.png";
 import flaskPng from "../assets/languages/flask.png";
 import mongodbPng from "../assets/languages/mongodb.jpg";
 import mysqlPng from "../assets/languages/mysql.png";
-
-
+import skimagePng from "../assets/languages/skimage.png";
+import torchPng from "../assets/languages/torch.png";
+import cudaPng from "../assets/languages/cuda.jpeg";
+import awsPng from "../assets/languages/aws.jpg";
 // --------------------------------------------------------------------------------------------------------------------
 
 export const tech = [
@@ -35,9 +36,7 @@ export const tech = [
           pythonPng,
           rPng,
           cPng,
-          cplusPng,
           javaPng,
-          juliaPng,
           bashPng,
         ],
       },
@@ -46,21 +45,28 @@ export const tech = [
         png: [
           scikitPng,
           tensorflowPng,
+          torchPng,
           djangoPng,
           djangoRestFrameworkPng,
           flaskPng,
+          fastapiPng,
+          opencvPng,
+          skimagePng,
+          seleniumPng,
+          pytestPng,
         ],
       },
       {
         type: "Tools & services",
         png: [
+          cudaPng,
           mysqlPng,
           postgresqlPng,
-          sqlitePng,
           mongodbPng,
           gitPng,
           githubPng,
           dockerPng,
+          awsPng,
         ],
       },
     ],

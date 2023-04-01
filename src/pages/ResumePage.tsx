@@ -1,24 +1,13 @@
 
 import ParticlesWrapper from "../components/animations/ParticlesWrapper";
 import Work from "../components/Resume";
-import Studies from "../components/Studies";
-import Page from "../components/Page";
 import Footer from "../components/Footer";
-import { Container, ActionIcon, createStyles, Center } from "@mantine/core"
+import { ActionIcon, createStyles, Center } from "@mantine/core"
 import { ArrowUp } from "tabler-icons-react";
-
-import { useState } from "react";
 // Mantine
 
 import { useScrollIntoView } from "@mantine/hooks";
-// components
-import About from "../components/About";
-import Github from "../components/Github";
-import Project from "../components/Project";
-import Hero from "../components/Hero";
-import Section from "../components/Section";
-import Skills from "../components/Skills";
-// // icons
+
 
 
 const useStyles = createStyles((theme) => ({
@@ -42,7 +31,6 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export default function ResumePage() {
-  const [currentOffset, setCurrentOffset] = useState(0);
   const { scrollIntoView, targetRef } = useScrollIntoView<HTMLDivElement>({
     offset: 60,
   });

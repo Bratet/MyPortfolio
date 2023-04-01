@@ -14,7 +14,7 @@ import {
 import { BrandTwitter, BrandYoutube, BrandInstagram } from "tabler-icons-react";
 import BoxWrapper from "./BoxWrapper";
 import { ContactIconsList } from "./ContactIcons";
-import { useRef } from 'react';
+import { useRef,useState,useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 
 const useStyles = createStyles((theme) => ({
@@ -95,12 +95,16 @@ export function Contact() {
 
   const form: any = useRef();
 
+  const [emailIssent, setEmailIssent] = useState(false);
+
   const sendEmail = (e : any) => {
     e.preventDefault();
 
     emailjs.sendForm('gmail', 'template_xv5m6e7', form.current, 'jkEwOHiY1oD0XODTO')
       .then((result) => {
           console.log(result.text);
+          setEmailIssent(true);
+          console.log(emailIssent);
       }, (error) => {
           console.log(error.text);
       });
@@ -119,6 +123,10 @@ export function Contact() {
   //     <Icon size={22} />
   //   </ActionIcon>
   // ));
+
+  // useEffect(() => {
+  //   console.log(emailIssent);
+  // }, [emailIssent]);
 
   return (
 
@@ -165,7 +173,7 @@ export function Contact() {
           />
 
           <Group position="right" mt="md"> 
-            <Popover width={150} position="bottom" withArrow shadow="md">
+            <Popover opened={emailIssent} onChange={setEmailIssent} width={150} position="bottom" withArrow shadow="md">
               <Popover.Target>
             <Button className={classes.control} type="submit" value='send'>
               Send Message

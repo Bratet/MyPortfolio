@@ -1,6 +1,5 @@
 // components
 import ParticlesWrapper from "../components/animations/ParticlesWrapper";
-import Page from "../components/Page";
 import Skills from "../components/Skills";
 import Footer from "../components/Footer";
 import { Center } from "@mantine/core"
